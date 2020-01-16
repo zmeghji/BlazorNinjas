@@ -1,0 +1,22 @@
+﻿@page "/ninjas"
+@inherits NinjasPageBase
+
+<h3>Ninjas</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ninjas in Ninjas)
+        {
+            <tr>
+                <td>@ninjas.FirstName</td>
+                <td>@ninjas.LastName</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
